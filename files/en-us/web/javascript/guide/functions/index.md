@@ -116,8 +116,10 @@ In the following code, the function receives a function defined by a function ex
 ```js
 function map(f, a) {
   const result = [];
+  let i = 0;
   for (const v of a) {
     result[i] = f(v);
+    i++;
   }
   return result;
 }
